@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    color: rgb(117, 8, 26);
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    background: linear-gradient(to right, #eae8d7, #9d59fb );
+
+}
+button{
+    background-color:antiquewhite;
+    padding: 0.3rem 2rem;
+    border-radius: 0.5rem;
+    border-width: 0;
+    margin-left: 3rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-size: medium;
+    letter-spacing: 0.1rem;
+    font-family: sans-serif;
+    line-height: 1.4;
+    height: 4rem;
+
+    &:hover{
+        box-shadow: 0.3rem 0.3rem 1rem 0.3rem #051937;
+        background-color: transparent;
+        color: rgb(117, 8, 26);
+        
+    }
+}
+h1{
+    font-size: 3.6rem;
+    margin-top: 4.8rem;
+}
+.list{
+    width: 36rem;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    align-items: center;
+    height: auto;
+    font-size: 2rem;
+}
+li{
+    cursor: pointer;
+    list-style-type: circle;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    &:hover{
+        color: #04463e;
+    }
+}
+input {
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border-radius: 5rem;
+    border-color: rgb(117, 8, 26);
+  }
+
+  @media (max-width: 500px) {
+    .btn{
+        margin: 0.7rem 3.2rem 0.7rem 11.3rem;
+        font-size: 1rem;
+        padding: 0rem 1rem;
+        font-weight: bolder;
+    }
+    input{
+        margin-left:7rem;
+        font-size: 1.4rem;
+        padding: 0.7rem 1rem;
+    }
+    .delBtn{
+        margin-right: 7rem;
+        padding: 0rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .list li{
+        margin-left: 7rem;
+        font-size: small;
+    }
+    body h1{
+        font-size: 1.6rem;
+    }
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }    
+    
+  }
